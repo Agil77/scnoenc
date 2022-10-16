@@ -6,14 +6,6 @@ import { fileURLToPath } from 'url'
 import moment from 'moment-timezone'
 import { group } from 'console'
 
-var http = require('http');
-
-http.createServer(function (req, res) {
-    res.writeHead(200, {'Content-Type': 'text/plain'});
-    res.write('Hello World!');
-    res.end();
-}).listen(8080);
-
 /*============= WAKTU =============*/
 let wibh = moment.tz('Asia/Jakarta').format('HH')
     let wibm = moment.tz('Asia/Jakarta').format('mm')
